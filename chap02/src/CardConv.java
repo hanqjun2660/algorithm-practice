@@ -37,7 +37,7 @@ public class CardConv {
         String dchar = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         do {
-            cno[digits++] = dchar.charAt(no % cd);      // cd로 나눈수를 저장
+            cno[digits++] = dchar.charAt(no % cd);      // cd로 나누고 남은 수를 저장
             no /= cd;
         } while(no != 0);
 
