@@ -19,7 +19,7 @@ public class CardConvEx {
         for(int i = 0; i < count; i++) {
             System.out.print(Arr[i]);
         }
-        System.out.print("입니다.");
+        System.out.print(" 입니다.");
     }
 
     static int conversion(int num, int[] Arr) {
@@ -28,7 +28,7 @@ public class CardConvEx {
 
         do {
             Arr[digits++] = num % 2;
-            System.out.println("+ ----------");
+            System.out.println("  + ----------");
             System.out.println("2 |" + num / 2 + "  --- " + num % 2);
             num /= 2;
         } while (num != 0);
