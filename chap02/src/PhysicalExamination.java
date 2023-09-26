@@ -69,6 +69,15 @@ public class PhysicalExamination {
 
         for(int i = 0; i < VMAX; i++) {
             System.out.printf("%3.1f~: %2d명\n", i / 10.0, vdist[i]);
+            // Q7
+            /*System.out.printf("%3.1f~ : ", i / 10.0);
+            for(int j = 0; j < vdist[i]; j++) {
+                System.out.print('*');
+            }
+            System.out.println();*/
         }
+
+        YMD ymd = new YMD(2023, 9, 26);
+        System.out.println(ymd.after(2));
     }
 }
