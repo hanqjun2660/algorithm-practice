@@ -38,7 +38,7 @@ public class BinSearchX {
      * @param x
      * @param num
      * @param ky
-     * @return
+     * @return 성공시 해당 인덱스 or 실패시 -1
      */
     private static int binSearchX(int[] x, int num, int ky) {
 
