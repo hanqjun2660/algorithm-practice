@@ -5,6 +5,8 @@ public class BinarySearchTester {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
+        System.out.print("요솟수: ");
         int num = sc.nextInt();
         int[] x = new int[num];
 
@@ -15,7 +17,7 @@ public class BinarySearchTester {
 
         for(int i = 1; i < num; i++) {
             do {
-                System.out.println("x[" + i + "]: ");
+                System.out.print("x[" + i + "]: ");
                 x[i] = sc.nextInt();;
             } while (x[i] < x[i-1]);            // 바로 앞의 요소보다 작으면 다시 입력받음
         }
@@ -26,7 +28,8 @@ public class BinarySearchTester {
         int idx = Arrays.binarySearch(x, ky);           // Arrays.binarySearch 메서드로 이진탐색을 쉽게 할 수 있다. 다만 중복된 값중 제일 처음 찾은 요소만 리턴한다.
 
         if(idx < 0) {       // Arrays.binarySearch 검색 실패로는 음수로 넘어온다.
-            System.out.println("그 값의 요소가 없습니다.");
+//            System.out.println("그 값의 요소가 없습니다.");
+            System.out.println("isPoint : " + (-idx -1));       // insert Point 출력
         } else {
             System.out.println("그 값은 x[" + idx + "] 에 있습니다.");
         }
