@@ -11,7 +11,7 @@ public class X {
      */
 
     // 필드, 메서드 등...
-    public static final Comparator<T> COMPARATOR = new Comp();      // Comparator 인터페이스와 compare 메서드를 구현한 클래스의 인스턴스를 생성
+    /*public static final Comparator<T> COMPARATOR = new Comp();      // Comparator 인터페이스와 compare 메서드를 구현한 클래스의 인스턴스를 생성
 
     private static class Comp implements Comparator<T> {
         public int compare(T d1, T d2) {
@@ -20,5 +20,5 @@ public class X {
             // d1이 d2와 같으면 0
             return 0;
         }
-    }
+    }*/
 }
