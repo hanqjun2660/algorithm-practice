@@ -25,7 +25,7 @@ public class StringBinarySearch {
         /**
          * 자연정렬 상태에선 binarySearch 메서드는 Object형으로 데이터를 전달받았다.
          * binarySearch 메서드에서 배열과 key로 간단하게 검색할 수 있는 이유는
-         * String class의 Comparable<T> 인터페이스와 compareTo 메서드를 구현하고 있기 때문이다.
+         * String class가 Comparable<T> 인터페이스와 compareTo 메서드를 구현하고 있기 때문이다.
          */
         int idx = Arrays.binarySearch(x, ky);       // 배열 x에서 값이 ky인 요소를 검색
 
