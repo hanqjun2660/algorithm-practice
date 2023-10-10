@@ -29,4 +29,20 @@ public class IntStack {
             capacity = 0;
         }
     }
+
+    // 스택에 x를 푸시
+    public int push(int x) throws OverflowIntStackException{
+        if(ptr >= capacity) {                       // 스택이 가득찼을때 예외발생
+            throw new OverflowIntStackException();
+        }
+        return stk[ptr++] = x;
+    }
+
+    // 스택에서 데이터를 팝(꼭대기에 있는 데이터를 꺼냄)
+    public int pop() throws EmptyIntStackException {
+        if(ptr <= 0) {
+            throw new EmptyIntStackException();
+        }
+        return stk[--ptr];
+    }
 }
