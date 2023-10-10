@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class IntStack {
 
     /**
@@ -44,5 +46,13 @@ public class IntStack {
             throw new EmptyIntStackException();
         }
         return stk[--ptr];
+    }
+
+    // 스택에서 가장 윗 데이터를 확인하는 메서드
+    public int peek() throws EmptyIntStackException {
+        if(ptr <= 0) {
+            throw new EmptyIntStackException();
+        }
+        return stk[ptr - 1];
     }
 }
