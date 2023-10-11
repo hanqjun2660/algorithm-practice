@@ -9,7 +9,7 @@ public class IntStackTester {
         while(true) {
             System.out.println();
             System.out.printf("현제 데이터 개수: %d / %d\n", s.size(), s.getCapacity());
-            System.out.print("(1) 푸시 (2) 팝 (3) 피크 (4) 덤프 (0) 종료:");
+            System.out.print("(1) 푸시 (2) 팝 (3) 피크 (4) 덤프 (5) 클리어 (6)검색 (7)비어있는지,가득찼는지 (0) 종료:");
 
             int menu = sc.nextInt();
 
@@ -47,6 +47,40 @@ public class IntStackTester {
                 case 4:                             // 덤프
                     s.dump();
                     break;
+
+                case 5:
+                    s.clear();
+                    break;
+                case 6:
+                    System.out.print("검색할 요소를 입력하세요: ");
+                    x = s.indexOf(sc.nextInt());
+                    System.out.println("검색한 요소는 " + x + "입니다.");
+                    break;
+                case 7:
+                    boolean status;
+                    while(true) {
+                        System.out.print("비어있는지 확인하려면 1번, 가득찼는지 확인하려면 2번을 입력하세요:");
+                        x = sc.nextInt();
+                        if(x == 1) {
+                            status = s.isEmpty();
+                            if(status) {
+                                System.out.println("비어있습니다.");
+                            } else {
+                                System.out.println("비어있지 않습니다.");
+                            }
+                            break;
+                        } else if(x == 2) {
+                            status = s.isFull();
+                            if(status) {
+                                System.out.println("가득차있습니다.");
+                            } else {
+                                System.out.println("가득차있지 않습니다.");
+                            }
+                            break;
+                        } else {
+                            System.out.println("1 or 2를 입력해주세요.");
+                        }
+                    }
             }
         }
     }
