@@ -49,11 +49,11 @@ public class IntStackTester {
                     break;
 
                 case 5:
-                    s.clear();
+                    s.clear();                      // 클리어
                     break;
                 case 6:
                     System.out.print("검색할 요소를 입력하세요: ");
-                    x = s.indexOf(sc.nextInt());
+                    x = s.indexOf(sc.nextInt());                            // 검색
                     System.out.println("검색한 요소는 " + x + "입니다.");
                     break;
                 case 7:
@@ -62,7 +62,7 @@ public class IntStackTester {
                         System.out.print("비어있는지 확인하려면 1번, 가득찼는지 확인하려면 2번을 입력하세요:");
                         x = sc.nextInt();
                         if(x == 1) {
-                            status = s.isEmpty();
+                            status = s.isEmpty();                           // isEmpty
                             if(status) {
                                 System.out.println("비어있습니다.");
                             } else {
@@ -70,7 +70,7 @@ public class IntStackTester {
                             }
                             break;
                         } else if(x == 2) {
-                            status = s.isFull();
+                            status = s.isFull();                            // isFull
                             if(status) {
                                 System.out.println("가득차있습니다.");
                             } else {
