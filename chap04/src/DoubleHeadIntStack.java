@@ -8,7 +8,7 @@ public class DoubleHeadIntStack {
     private int ptrA;           // 스택 포인터 A
     private int ptrB;           // 스택 포인터 B
 
-    private enum AorB {StackA, StackB};
+    public enum AorB {StackA, StackB};
 
     // 실행 시 예외: 스택이 비어있음
     public class EmptyDoubleHeadIntStackException extends RuntimeException {
