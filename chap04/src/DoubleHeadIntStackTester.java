@@ -11,7 +11,7 @@ public class DoubleHeadIntStackTester {
 
         while(true) {
             System.out.println("현재 데이터 개수 : " +
-                    "A : " + s.size(DoubleHeadIntStack.AorB.StackA) + "/" +
+                    "A : " + s.size(DoubleHeadIntStack.AorB.StackA) + " / " +
                     "B : " + s.size(DoubleHeadIntStack.AorB.StackB));
             System.out.print("( 1) A푸시 ( 2) A팝 ( 3) A피크 ( 4) A덤프 ( 5) A검색 ( 6) A비움\n" +
                             ("( 7) B푸시 ( 8) B팝 ( 9) B피크 ( 10) B덤프 ( 11) B검색 ( 12) B비움\n" +

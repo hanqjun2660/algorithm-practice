@@ -23,7 +23,7 @@ public class DoubleHeadIntStack {
     // 생성자
     public DoubleHeadIntStack(int maxlen) {
         ptrA = 0;
-        ptrB = 0;
+        ptrB = maxlen - 1;
         capacity = maxlen;
         try {
             stk = new int[capacity];        // 스택 본체열 배열 생성
